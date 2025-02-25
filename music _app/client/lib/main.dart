@@ -1,9 +1,11 @@
-import 'package:client/core/theme.dart';
-import 'package:client/features/auth/view/pages/signup_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart' show ProviderScope;
+
+import 'core/theme.dart';
+import 'features/auth/view/pages/signup_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ProviderScope(child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
